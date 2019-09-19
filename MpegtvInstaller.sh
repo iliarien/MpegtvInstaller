@@ -43,6 +43,7 @@ echo -e "${jeshile} └───────────────────
 sleep 8
 # reboot
 echo " "
+echo " "
 echo -e "${jeshile} ┌─────────────────────────----┐ \e[0m"
 echo -e "${jeshile} │[R] Please Reboot server...  │ \e[0m"
 echo -e "${jeshile} └─────────────────────────----┘ \e[0m"
