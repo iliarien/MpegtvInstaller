@@ -26,15 +26,13 @@ echo -e "${jeshile}	│[R] Getting MpegTv Informations                          
 echo -e "${jeshile}	└────────────────────────────────────────────────────────────────────────┘	\e[0m"
 echo " "
 read -p "Enter Main http Port : "  mainport
-read -p "Enter mysql host : "  sqlhost
 read -p "Enter mysql username : "  sqluser
 read -p "Enter mysql password : "  sqlpass
-read -p "Enter mysql database : "  sqldatabase
 echo "http port: $mainport
-mysql server: $sqlhost
+mysql server: localhost
 mysql username: $sqluser
 mysql password: $sqlpass
-mysql database: $sqldatabase
+mysql database: mpegtv
 FILE IP2COUNTRY: \"/var/mpegtv/IpToCountry.csv\"" >>/var/mpegtv/mpegtv.cfg
 echo "Staring Main With $mainport http port"
 /usr/local/bin/mpegtv -b &
