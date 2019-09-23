@@ -8,7 +8,9 @@ echo -e "${jeshile} │  installing necessary components         │ \e[0m"
 echo -e "${jeshile} └──────────────────────────────────────────┘ \e[0m"
 echo " "
 apt update && apt upgrade -y
-apt-get install ffmpeg libavcodec57 libavutil55 libavfilter6 libavformat57 mysql-server libmysqlclient20 -y
+apt-get install ffmpeg libavcodec57 libavutil55 libavfilter6 libavformat57 mysql-server -y
+wget "http://ftp.de.debian.org/debian/pool/main/m/mysql-5.7/libmysqlclient20_5.7.26-1_amd64.deb"
+dpkg -i libmysqlclient20_5.7.26-1_amd64.deb 
 echo " "
 echo " "
 echo -e "${jeshile} ┌──────────────────────────────────────────┐ \e[0m"
