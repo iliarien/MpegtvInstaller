@@ -91,7 +91,7 @@ echo " "
 
 PS3="Votre choix : "
 
-select item in "- Install Main -" "- Install Slave -" "- converte database -" "- Quit -"
+select item in "- Install Main -" "- Install Slave -" "- Convert Database -" "- Quit -"
 do
     for var in $REPLY; do
         echo "Vous avez choisi l'item $var : $item"
