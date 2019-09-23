@@ -89,12 +89,12 @@ mysql -u $sqluser -p $sqlpass mpegtv < /var/mpegtv/database.sql
 echo " "
 }
 
-PS3="Votre choix : "
+PS3="Your Choice : "
 
 select item in "- Install Main -" "- Install Slave -" "- Convert Database -" "- Quit -"
 do
     for var in $REPLY; do
-        echo "Vous avez choisi l'item $var : $item"
+        echo "Y'ouve choosed $var : $item"
         case $var in
                 1)
                         main
