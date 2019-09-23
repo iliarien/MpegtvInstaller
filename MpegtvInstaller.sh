@@ -24,6 +24,7 @@ tar -xzf mpegtv-data.tgz
 echo -e "${jeshile}	┌────────────────────────────────────────────────────────────────────────┐	\e[0m"
 echo -e "${jeshile}	│[R] Getting MpegTv Informations                                         │	\e[0m"
 echo -e "${jeshile}	└────────────────────────────────────────────────────────────────────────┘	\e[0m"
+mv /var/mpegtv/mpegtv.cfg /var/mpegtv/mpegtv.cfg.old
 echo " "
 read -p "Enter Main http Port : "  mainport
 read -p "Enter mysql username : "  sqluser
