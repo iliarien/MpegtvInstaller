@@ -190,7 +190,7 @@ echo " "
 
 PS3="Your Choice : "
 
-select item in "- Install Main -" "- Install Slave Ubuntu 18 -" "- Install Slave Ubuntu 14 -""- Convert Database -" "- Quit -"
+select item in "- Install Main -" "- Install Slave Ubuntu 18 -" "- Install Slave Ubuntu 14 -" "- Convert Database -" "- Quit -"
 do
     for var in $REPLY; do
         echo "Y'ouve choosed $var : $item"
